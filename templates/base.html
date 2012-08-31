@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        <title>{% block title %}GPX-Blender{% endblock %}</title>
+    </head>
+    <body>
+        <div id="header">
+            {% block header %}<h1>GPX-Blender</h1>{% endblock %}
+        </div>
+        <hr>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <hr width="100%"> 
+        <div id="footer">
+            {% block footer %}
+            <p>Licensed under the Open Software License v3.0</p>
+            {% endblock %}
+        </div>
+    </body>
+</html>

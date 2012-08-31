@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Your files have been processed successfully!</p>
+<a href="{{ url_for('static', filename='uploads/'+file_download) }}">Click Here to Download!</a>
+{% if file_output %}<p class=success>{{ file_output }}</p>{% endif %}
+{% endblock %}
