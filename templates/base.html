@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>{% block title %}GPX-Blender{% endblock %}</title>
     </head>
     <body>
@@ -15,7 +15,8 @@
         <hr width="100%"> 
         <div id="footer">
             {% block footer %}
-            <p>Licensed under the Open Software License v3.0</p>
+            <p>Licensed under Open Software License v3.0 - 
+               Created by <a href="http://github.com/evansneath">Evan Sneath</a></p>
             {% endblock %}
         </div>
     </body>
